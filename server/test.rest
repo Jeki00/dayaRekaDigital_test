@@ -1,0 +1,30 @@
+GET http://localhost:5000/api/customers
+###
+POST  http://localhost:5000/api/customers
+content-type: application/json
+
+{
+    "username": "john doe"
+}
+###
+DELETE   http://localhost:5000/api/customers/12
+###
+GET http://localhost:5000/api/customers/1
+###
+http://localhost:5000/api/transactions
+###
+PUT  http://localhost:5000/api/transactions/2
+content-type: application/json
+
+{
+    "quantity":4
+}
+###
+POST  http://localhost:5000/api/transactions
+content-type: application/json
+
+{
+    "user_id":1,
+    "product_id":3,
+    "quantity":5
+}
